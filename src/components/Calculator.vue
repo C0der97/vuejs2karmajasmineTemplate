@@ -1,16 +1,17 @@
 <template>
-  <span>{{ message }}</span>
+  <span>{{ sum(5,10) }}</span>
 </template>
 
 <script>
 export default {
   data () {
     return {
-      message: 'hello!'
     }
   },
-  created () {
-    this.message = 'bye!'
+  methods: {
+    sum (a, b) {
+      return a + b
+    }
   }
 }
 </script>
