@@ -4,6 +4,6 @@ describe('Posts', () => {
   it('The function GetPosts Exists', () => {
     const vm = new Vue(Posts).$mount()
     console.log(vm)
-    expect(typeof vm.getPosts()).toBe('function')
+    expect(typeof vm.getPosts).toBe('function')
   })
 })
